@@ -1,4 +1,4 @@
-# S5 — Construir para producción
+# S5 — Producción
 
 ## Theme
 

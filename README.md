@@ -26,6 +26,31 @@ Las tecnologías cambian. Las capacidades permanecen.
 
 **Mentor evaluando usar esto con alguien.** El contrato pedagógico completo está en [`curriculum/competencies.md`](curriculum/competencies.md) (qué sabe hacer un egresado) y [`curriculum/assessment.md`](curriculum/assessment.md) (cómo se audita). El modelo de mentoría está en [`project/project-model.md`](project/project-model.md).
 
+## Modalidades de uso y mentoría
+
+El currículum, los lineamientos del proyecto y la estructura de evaluación de este repositorio son **100% open source y gratuitos**. El objetivo es que cualquier persona con disciplina pueda formarse con estándares reales de la industria.
+
+Puedes usar este material de tres formas:
+
+### 1. Modalidad autodidacta (gratuita)
+
+Clonas el repositorio, sigues el plan de estudios por tu cuenta usando el `Reference Project` (o tu propio proyecto) y te autoevalúas utilizando las rúbricas provistas en `curriculum/assessment.md`.
+
+### 2. Mentoría personalizada y code reviews (arancelado)
+
+El material es libre, pero el tiempo de revisión técnica no lo es. Si quieres que el proyecto que construyas tenga el rigor de un entorno laboral real, ofrezco cupos limitados para mentoría 1 a 1. Esto incluye:
+
+- Code reviews detallados de tus pull requests cada dos semanas.
+- Sesiones de depuración (debugging) en vivo cuando te bloquees.
+- Auditoría de arquitectura y seguridad de tu proyecto.
+- Simulacro de entrevista y defensa técnica al finalizar cada semestre.
+
+*(Para consultar disponibilidad y valores, contáctame a [fdomerlo@gmail.com](mailto:fdomerlo@gmail.com)).*
+
+### 3. Clases específicas / consultoría
+
+Si eres un equipo, una institución, o un grupo de estudiantes que necesita una clase profunda sobre un tema específico del plan (ej. *diseño de APIs, concurrencia en bases de datos, Docker/CI*), ofrezco capacitaciones a medida.
+
 ## Arquitectura educativa
 
 ```text
@@ -188,27 +213,8 @@ trabajo
 
 La misma estructura sirve para ambos casos.
 
-## Modalidades de uso y Mentoría
-
-El currículum, los lineamientos del proyecto y la estructura de evaluación de este repositorio son **100% open source y gratuitos**. Mi objetivo es que cualquier persona con disciplina pueda formarse con estándares reales de la industria.
-
-Puedes usar este material de tres formas:
-
-**1. Modalidad Autodidacta (Gratuita)**
-Clonas el repositorio, sigues el plan de estudios por tu cuenta usando el `Reference Project` (o tu propio proyecto) y te autoevalúas utilizando las rúbricas provistas en `curriculum/assessment.md`. 
-
-**2. Mentoría Personalizada y Code Reviews (Arancelado)**
-El material es libre, pero el tiempo de revisión técnica no lo es. Si quieres que el proyecto que construyas tenga el rigor de un entorno laboral real, ofrezco cupos limitados para mentoría 1 a 1. Esto incluye:
-- Code Reviews detallados de tus Pull Requests cada dos semanas.
-- Sesiones de depuración (debugging) en vivo cuando te bloquees.
-- Auditoría de arquitectura y seguridad de tu proyecto.
-- Simulacro de entrevista y defensa técnica al finalizar cada semestre.
-*(Para consultar disponibilidad y valores, contáctame en [Tu Email/LinkedIn/Link de contacto]).*
-
-**3. Clases Específicas / Consultoría**
-Si eres un equipo, una institución, o un grupo de estudiantes que necesita una clase profunda sobre un tema específico del plan (ej. *Diseño de APIs, Concurrencia en bases de datos, Docker/CI*), ofrezco capacitaciones a medida.
-
 ## ¿Te sirvió este material? (Colaboraciones)
+
 Si estás siguiendo el plan de forma autodidacta y te ha aportado valor en tu carrera, el repositorio está abierto a colaboraciones. Puedes invitarme un café o apoyar el mantenimiento de este plan a través de:
 
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=flat-square&logo=github)](https://github.com/sponsors/fdomerlo)
@@ -262,4 +268,4 @@ Las modificaciones se realizan sobre evidencia.
 
 ## Objetivo final
 
-> No enseñar a usar herramientas. Formando personas capaces de construir, operar y evolucionar sistemas de software.
+> No enseñar a usar herramientas. Formar personas capaces de construir, operar y evolucionar sistemas de software.

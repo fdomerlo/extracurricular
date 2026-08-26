@@ -50,7 +50,7 @@ Esto completa la sección de restricciones legales del `project-brief.md` del pr
 | S3 | Entregar software | HTTP, Django + HTMX desplegado, con odontólogo/secretaria/pacientes usándolo |
 | S4 | Diseñar sistemas | recordatorios en segundo plano, logging estructurado, refactor grande |
 | S5 | Producción | servidor real operado con procedimientos de despliegue y rollback |
-| S6 | Evolucionar | observabilidad, código ajeno, segundo lenguaje, salida profesional |
+| S6 | Diseñar y liderar | observabilidad, código ajeno, segundo lenguaje, salida profesional |
 
 ---
 

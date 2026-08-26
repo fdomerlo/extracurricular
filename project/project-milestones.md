@@ -181,7 +181,7 @@ Ejecutar el sistema fuera del entorno de desarrollo.
 
 ------------------------------------------------------------------------
 
-# S6 --- Evolucionar
+# S6 --- Diseñar y liderar
 
 ## Objetivo
 

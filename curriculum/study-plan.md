@@ -114,7 +114,7 @@ Cada semestre desarrolla capacidades, no tecnologías. La tabla completa de comp
 | S3 | Entregar software | usable por alguien fuera de tu máquina |
 | S4 | Diseñar sistemas | capaz de sostener carga y fallar con criterio |
 | S5 | Producción | operable fuera del entorno de desarrollo |
-| S6 | Evolucionar | observable, documentado y defendible |
+| S6 | Diseñar y liderar | observable, documentado y defendible |
 
 ### S1 — Construir (~170 h)
 
@@ -197,7 +197,7 @@ Cada semestre desarrolla capacidades, no tecnologías. La tabla completa de comp
 - [ ] Diagnosticaste un fallo real (o simulado deliberadamente) usando esas métricas o logs, no adivinando.
 - [ ] Podés explicar la topología completa de despliegue: qué corre dónde y por qué.
 
-### S6 — Evolucionar (~250 h)
+### S6 — Diseñar y liderar (~250 h)
 
 **Objetivo:** dejar de ser alguien que hizo un proyecto y pasar a ser alguien que trabaja de esto.
 
