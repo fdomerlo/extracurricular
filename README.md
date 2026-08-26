@@ -211,8 +211,6 @@ Si eres un equipo, una institución, o un grupo de estudiantes que necesita una 
 ## ¿Te sirvió este material? (Colaboraciones)
 Si estás siguiendo el plan de forma autodidacta y te ha aportado valor en tu carrera, el repositorio está abierto a colaboraciones. Puedes invitarme un café o apoyar el mantenimiento de este plan a través de:
 
-## Apoyo y Mentoría
-
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=flat-square&logo=github)](https://github.com/sponsors/fdomerlo)
 [![Cafecito](https://img.shields.io/badge/Colaborar-Cafecito-FFDD00?style=flat-square&logo=cafecito)](https://cafecito.app/fdomerlo)
 [![PayPal](https://img.shields.io/badge/Donar-PayPal-00457C?style=flat-square&logo=paypal)](https://paypal.me/fdomerlo)
