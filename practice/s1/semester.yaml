@@ -1,0 +1,11 @@
+semester: S1
+title: Construir
+theme: Build Software
+academic_weeks: 22
+classes: 11
+mentoring: approximately_every_2_weeks
+competencies:
+  primary: [C02, C03, C04, C05, C06, C09, C10, C11, C13, C16, C45, C58, C66, C68, C71]
+project:
+  modes: [student, reference]
+  milestone: M-S1
