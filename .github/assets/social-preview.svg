@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+
+    <!-- Glow Gradients -->
+    <radialGradient id="cyan-glow" cx="80%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="indigo-glow" cx="20%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.4" />
+      <circle cx="40" cy="40" r="1" fill="#334155" fill-opacity="0.6" />
+    </pattern>
+
+    <!-- Card Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <!-- Badge Shadow -->
+    <filter id="badge-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#38bdf8" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1280" height="640" fill="url(#bg-grad)" />
+  <rect width="1280" height="640" fill="url(#grid)" />
+  <rect width="1280" height="640" fill="url(#cyan-glow)" />
+  <rect width="1280" height="640" fill="url(#indigo-glow)" />
+
+  <!-- Outer Border Accent -->
+  <rect x="1" y="1" width="1278" height="638" fill="none" stroke="#1e293b" stroke-width="1.5" rx="8" />
+
+  <!-- Left Side: Brand & Hierarchy -->
+  <g transform="translate(100, 110)">
+    <!-- Pill Badge: Release -->
+    <g transform="translate(0, 0)">
+      <rect width="160" height="34" rx="17" fill="#0369a1" fill-opacity="0.2" stroke="#0284c7" stroke-width="1" filter="url(#badge-glow)" />
+      <circle cx="18" cy="17" r="4" fill="#38bdf8" />
+      <text x="32" y="22" class="font-sans font-mono" font-size="13" font-weight="600" fill="#38bdf8" letter-spacing="0.5">v1.0 S1 Released</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="115" class="font-sans" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="-1.5">
+      EXTRACURRICULAR
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="175" class="font-sans" font-size="34" font-weight="700" fill="#f1f5f9" letter-spacing="-0.5">
+      Desarrollo Moderno de Software
+    </text>
+
+    <!-- Tagline & Description -->
+    <text x="0" y="235" class="font-sans" font-size="20" font-weight="400" fill="#94a3b8">
+      Un currículo open source de tres años para desarrollar
+    </text>
+    <text x="0" y="265" class="font-sans" font-size="20" font-weight="400" fill="#94a3b8">
+      capacidades profesionales de ingeniería de software.
+    </text>
+
+    <!-- Feature Pillars / Badges -->
+    <g transform="translate(0, 330)">
+      <!-- Badge 1: 79 Competencias -->
+      <g transform="translate(0, 0)">
+        <rect width="175" height="36" rx="8" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1" />
+        <text x="14" y="23" class="font-sans" font-size="14" font-weight="600" fill="#e2e8f0">🎯 79 Competencias</text>
+      </g>
+
+      <!-- Badge 2: S1 Construir -->
+      <g transform="translate(190, 0)">
+        <rect width="155" height="36" rx="8" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1" />
+        <text x="14" y="23" class="font-sans" font-size="14" font-weight="600" fill="#e2e8f0">🧱 S1: Construir</text>
+      </g>
+
+      <!-- Badge 3: 100% Autodidacta -->
+      <g transform="translate(360, 0)">
+        <rect width="175" height="36" rx="8" fill="#1e293b" fill-opacity="0.6" stroke="#334155" stroke-width="1" />
+        <text x="14" y="23" class="font-sans" font-size="14" font-weight="600" fill="#e2e8f0">⚡ 100% Open Source</text>
+      </g>
+    </g>
+
+    <!-- Bottom Pipeline -->
+    <g transform="translate(0, 420)">
+      <text x="0" y="0" class="font-mono" font-size="13" font-weight="500" fill="#64748b" letter-spacing="1">
+        DOMINIO → TESTING → PERSISTENCIA → CI/CD → ARQUITECTURA → OPERACIÓN
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Side: Code Window (IDE Card) -->
+  <g transform="translate(685, 95)" filter="url(#shadow)">
+    <!-- Window Frame -->
+    <rect width="495" height="450" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+    
+    <!-- Title Bar -->
+    <path d="M 0 12 C 0 5.37 5.37 0 12 0 L 483 0 C 489.63 0 495 5.37 495 12 L 495 42 L 0 42 Z" fill="#1e293b" fill-opacity="0.5" />
+    <line x1="0" y1="42" x2="495" y2="42" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Window Dots -->
+    <circle cx="22" cy="21" r="5.5" fill="#ef4444" fill-opacity="0.8" />
+    <circle cx="38" cy="21" r="5.5" fill="#f59e0b" fill-opacity="0.8" />
+    <circle cx="54" cy="21" r="5.5" fill="#10b981" fill-opacity="0.8" />
+
+    <!-- File Tab -->
+    <g transform="translate(80, 8)">
+      <rect width="190" height="26" rx="5" fill="#0f172a" />
+      <text x="16" y="18" class="font-mono" font-size="12" fill="#94a3b8">src/domain/appointment.py</text>
+    </g>
+
+    <!-- Code Content -->
+    <g transform="translate(24, 75)" class="font-mono" font-size="13" xml:space="preserve">
+      <!-- Line Numbers -->
+      <g fill="#475569" text-anchor="end">
+        <text x="15" y="0">1</text>
+        <text x="15" y="24">2</text>
+        <text x="15" y="48">3</text>
+        <text x="15" y="72">4</text>
+        <text x="15" y="96">5</text>
+        <text x="15" y="120">6</text>
+        <text x="15" y="144">7</text>
+        <text x="15" y="168">8</text>
+        <text x="15" y="192">9</text>
+        <text x="15" y="216">10</text>
+        <text x="15" y="240">11</text>
+        <text x="15" y="264">12</text>
+        <text x="15" y="288">13</text>
+        <text x="15" y="312">14</text>
+        <text x="15" y="336">15</text>
+      </g>
+
+      <!-- Code Text with Syntax Highlighting -->
+      <g transform="translate(35, 0)">
+        <!-- Line 1 -->
+        <text x="0" y="0">
+          <tspan fill="#c084fc">@dataclass</tspan><tspan fill="#94a3b8">(</tspan><tspan fill="#38bdf8">frozen</tspan><tspan fill="#94a3b8">=</tspan><tspan fill="#f59e0b">True</tspan><tspan fill="#94a3b8">)</tspan>
+        </text>
+        <!-- Line 2 -->
+        <text x="0" y="24">
+          <tspan fill="#f43f5e">class</tspan> <tspan fill="#38bdf8" font-weight="600">Appointment</tspan><tspan fill="#94a3b8">:</tspan>
+        </text>
+        <!-- Line 3 -->
+        <text x="20" y="48">
+          <tspan fill="#e2e8f0">id</tspan><tspan fill="#94a3b8">: UUID</tspan>
+        </text>
+        <!-- Line 4 -->
+        <text x="20" y="72">
+          <tspan fill="#e2e8f0">patient</tspan><tspan fill="#94a3b8">: Patient</tspan>
+        </text>
+        <!-- Line 5 -->
+        <text x="20" y="96">
+          <tspan fill="#e2e8f0">professional</tspan><tspan fill="#94a3b8">: Professional</tspan>
+        </text>
+        <!-- Line 6 -->
+        <text x="20" y="120">
+          <tspan fill="#e2e8f0">slot</tspan><tspan fill="#94a3b8">: Slot</tspan>
+        </text>
+        <!-- Line 7 -->
+        <text x="20" y="144">
+          <tspan fill="#e2e8f0">status</tspan><tspan fill="#94a3b8">: AppointmentStatus = </tspan><tspan fill="#38bdf8">CREATED</tspan>
+        </text>
+        <!-- Line 8 -->
+        <text x="0" y="168">
+          <tspan fill="#64748b"># Regla de invariante pura (S1-05)</tspan>
+        </text>
+        <!-- Line 9 -->
+        <text x="20" y="192">
+          <tspan fill="#f43f5e">def</tspan> <tspan fill="#38bdf8" font-weight="600">confirm</tspan><tspan fill="#94a3b8">(self) -&gt; </tspan><tspan fill="#a5f3fc">"Appointment"</tspan><tspan fill="#94a3b8">:</tspan>
+        </text>
+        <!-- Line 10 -->
+        <text x="40" y="216">
+          <tspan fill="#f43f5e">if</tspan> <tspan fill="#e2e8f0">self.status == </tspan><tspan fill="#38bdf8">CANCELLED</tspan><tspan fill="#94a3b8">:</tspan>
+        </text>
+        <!-- Line 11 -->
+        <text x="60" y="240">
+          <tspan fill="#f43f5e">raise</tspan> <tspan fill="#fbbf24">AppointmentCancelledError</tspan><tspan fill="#94a3b8">(</tspan>
+        </text>
+        <!-- Line 12 -->
+        <text x="80" y="264">
+          <tspan fill="#a5f3fc">"No se puede confirmar turno cancelado"</tspan>
+        </text>
+        <!-- Line 13 -->
+        <text x="60" y="288">
+          <tspan fill="#94a3b8">)</tspan>
+        </text>
+        <!-- Line 14 -->
+        <text x="40" y="312">
+          <tspan fill="#f43f5e">return</tspan> <tspan fill="#38bdf8">replace</tspan><tspan fill="#94a3b8">(self, status=</tspan><tspan fill="#38bdf8">CONFIRMED</tspan><tspan fill="#94a3b8">)</tspan>
+        </text>
+        <!-- Line 15 -->
+        <text x="0" y="336">
+          <tspan fill="#34d399"># Tests unitarios en memoria (pytest)</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
