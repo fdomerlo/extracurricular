@@ -26,47 +26,65 @@ Esta separación simula el entorno profesional real: las especificaciones de neg
 
 ## 2. Configuración Inicial de tu Proyecto
 
-Tanto si vas a desarrollar el **Reference Project** (sistema de consultorio médico) como un **proyecto propio**:
+Para facilitar tu arranque, disponés de dos opciones:
 
-### Paso 1: Crear tu repositorio
-1. Creá un nuevo repositorio en GitHub: por ejemplo `consultorio-s1` o el nombre de tu dominio.
-2. Clonaló en tu máquina local en una carpeta independiente a `extracurricular`:
-   ```bash
-   git clone git@github.com:tu-usuario/consultorio-s1.git
-   cd consultorio-s1
-   ```
+### Opción A: Comenzar con el Starter Boilerplate (Recomendada)
+En [`practice/s1/boilerplate/`](../practice/s1/boilerplate/) tenés una plantilla completa y preconfigurada con:
+- `requirements.md` con las entidades e invariantes de dominio listos para ser leídos por la **Plataforma de Tutoría Socrática con IA**.
+- `pyproject.toml` configurado para Python 3.12+, `uv`, `pytest` y `ruff`.
+- Layout `src/consultorio` y tests iniciales en verde.
+- `.github/workflows/ci.yml` para correr automáticamente tests en GitHub Actions en cada push.
 
-### Paso 2: Inicializar el paquete con `uv`
-Siguiendo las pautas de [`practice/s1/classes/S1-01.md`](../practice/s1/classes/S1-01.md):
+Podés copiar el contenido de [`practice/s1/boilerplate/`](../practice/s1/boilerplate/) a la carpeta de tu nuevo repositorio:
 ```bash
-# Inicializar paquete estructurado
-uv init . --package
+# 1. Creá tu repo local
+mkdir mi-consultorio && cd mi-consultorio
+git init
 
-# Agregar dependencia de testing
-uv add --dev pytest
+# 2. Copiá el boilerplate desde extracurricular
+cp -r /ruta/a/extracurricular/practice/s1/boilerplate/* .
+cp /ruta/a/extracurricular/practice/s1/boilerplate/.gitignore .
+mkdir -p .github/workflows
+cp /ruta/a/extracurricular/practice/s1/boilerplate/.github/workflows/ci.yml .github/workflows/
+
+# 3. Instalá el entorno y verificá los tests
+uv sync
+uv run pytest
+
+# 4. Primer commit y subida a tu GitHub personal
+git add .
+git commit -m "chore: inicializar proyecto S1 desde boilerplate con layout src y CI"
+git remote add origin git@github.com:tu-usuario/mi-consultorio.git
+git branch -M main
+git push -u origin main
 ```
 
-### Paso 3: Estructura mínima de directorios
-Tu repositorio debe adoptar el layout profesional `src/`:
+### Opción B: Inicialización manual desde cero
+Si preferís construir la estructura paso a paso siguiendo [`practice/s1/classes/S1-01.md`](../practice/s1/classes/S1-01.md):
+```bash
+mkdir mi-consultorio && cd mi-consultorio
+git init
+uv init . --package
+uv add --dev pytest ruff
+```
+
+Estructura mínima esperada:
 ```text
 mi-proyecto/
 ├── .gitignore
 ├── pyproject.toml
 ├── uv.lock
 ├── README.md
+├── requirements.md               # Especificación del dominio e invariantes
+├── .github/
+│   └── workflows/
+│       └── ci.yml                # CI automatizado con pytest
 ├── src/
 │   └── <mi_paquete>/
 │       └── __init__.py
 └── tests/
     ├── __init__.py
-    └── test_placeholder.py
-```
-
-Commiteá esta estructura base como tu primer commit:
-```bash
-git add .
-git commit -m "chore: inicializar proyecto con layout src/ y pytest vía uv"
-git push origin main
+    └── test_smoke.py
 ```
 
 ---
@@ -83,7 +101,8 @@ Para cada clase de [`practice/s1/`](../practice/s1/README.md):
    ```
 4. **Implementación y tests:** Desarrollá la lógica de negocio y escribí tests que protejan el comportamiento contra regresiones.
 5. **Verificación contra Definition of Done:** Cada clase incluye una lista de control al final (*Evidencia — Definition of Done*). No cierres la clase hasta que todos los puntos estén en verde.
-6. **Merge limpio a `main`:**
+6. **Auditoría con el Tutor Socrático de IA (Opcional / 24/7):** Antes de fusionar tu rama, podés ingresar a la [Plataforma de Tutoría Socrática con IA](../tutoring/README.md#modalidad-2-tutoría-socrática-asistida-por-ia-247-saas-arancelado) e iniciar sesión con tu cuenta de GitHub. Al seleccionar tu repositorio y rama activa (`feature/...`), el agente inspeccionará tu diff, tu `requirements.md` y el estado de tus tests en GitHub Actions para orientar tu razonamiento y auditar tu entrega frente a la *Definition of Done*.
+7. **Merge limpio a `main`:**
    ```bash
    git checkout main
    git merge --no-ff feature/s1-04-domain-models
