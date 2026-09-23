@@ -12,8 +12,8 @@ Este repositorio es un curriculum vivo. El diseño general abarca seis semestres
 | Marco de evaluación | Definido |
 | Modelo de proyecto | Definido |
 | S1 — Construir | Material de referencia disponible |
-| S2 — Persistir y servir | Estructura y planificación disponibles; contenido en desarrollo |
-| S3 — Entregar software | Planificado |
+| S2 — Persistir y servir | Material de referencia disponible |
+| S3 — Entregar software | Estructura y planificación disponibles; contenido en desarrollo |
 | S4 — Diseñar sistemas | Planificado |
 | S5 — Producción | Planificado |
 | S6 — Diseñar y liderar | Planificado |
@@ -49,8 +49,8 @@ Un semestre se considera suficientemente maduro cuando esa cadena puede recorrer
 - [x] Definir milestone.
 - [x] Definir rúbrica.
 - [x] Publicar Reference Project inicial.
-- [ ] Validar el recorrido completo con estudiantes.
-- [ ] Incorporar feedback de implementación.
+- [x] Validar el recorrido completo con estudiantes.
+- [x] Incorporar feedback de implementación.
 
 ## Fase 3 — S2: Persistir y servir
 
@@ -58,13 +58,13 @@ Objetivo: convertir el dominio construido en S1 en una aplicación persistente, 
 
 Prioridades:
 
-- [ ] Completar clases.
-- [ ] Completar laboratorios.
-- [ ] Completar challenges.
-- [ ] Completar project tasks.
-- [ ] Definir evidencia por competencia.
-- [ ] Completar milestone M-S2.
-- [ ] Completar Reference Project.
+- [x] Completar clases.
+- [x] Completar laboratorios.
+- [x] Completar challenges.
+- [x] Completar project tasks.
+- [x] Definir evidencia por competencia.
+- [x] Completar milestone M-S2.
+- [x] Completar Reference Project.
 - [ ] Ejecutar una cohorte piloto.
 - [ ] Revisar carga y dificultad.
 
