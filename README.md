@@ -1,6 +1,6 @@
 # Desarrollo Moderno de Software
 
-[![Release](https://img.shields.io/badge/release-v1.0_(S1_Released)-0969da?style=flat-square)](docs/roadmap.md)
+[![Release](https://img.shields.io/badge/release-v1.1_(S1_+_S2_Released)-0969da?style=flat-square)](docs/roadmap.md)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)
 [![Curriculum](https://img.shields.io/badge/curriculum-validated-2da44e?style=flat-square)](.github/workflows/curriculum-lint.yml)
 
@@ -12,8 +12,8 @@
 
 *Las tecnologías cambian; las capacidades profesionales de ingeniería permanecen.*
 
-> **Estado del programa (v1.0 — S1 Released):**  
-> El **Semestre 1 ("Construir")** se encuentra completamente publicado, testeado y listo para ser cursado de forma autónoma o con acompañamiento. Los semestres S2 a S6 se desarrollan de forma abierta conforme a nuestro [`Roadmap`](docs/roadmap.md).
+> **Estado del programa (v1.1 — S1 + S2 Released):**  
+> Los semestres **S1 ("Construir")** y **S2 ("Persistir y servir")** se encuentran completamente publicados, testeados y listos para ser cursados de forma autónoma o con acompañamiento. Los semestres S3 a S6 se desarrollan de forma abierta conforme a nuestro [`Roadmap`](docs/roadmap.md).
 
 ---
 
@@ -32,12 +32,12 @@ Este programa está pensado para personas con una base previa de programación q
 
 ## Tres años, seis semestres
 
-El currículo se divide en seis semestres (aproximadamente 22 semanas académicas por semestre), combinando estudio conceptual, ejercicios, proyecto integrador y un hito (*milestone*) con defensa técnica:
+El currículo está diseñado con la profundidad y alcance de **tres años de formación profesional (~1.495 horas de ingeniería)**, estructurado en seis semestres o etapas de madurez técnica. Cada etapa combina estudio conceptual, ejercicios de laboratorio, la evolución del proyecto longitudinal y un hito (*milestone*) con defensa técnica oral:
 
 | Semestre | Eje de Aprendizaje | Capacidad Demostrable al Finalizar | Estado |
 |:---:|---|---|:---:|
 | **S1** | **Construir** | Software pequeño, modular, testeable en memoria y versionado con Git. | **Disponible** ([`practice/s1/`](practice/s1/)) |
-| **S2** | **Persistir y servir** | Modelado relacional riguroso, capa de persistencia y servicios web/API. | *En Roadmap* |
+| **S2** | **Persistir y servir** | Persistencia relacional (PostgreSQL), SQL a mano, transacciones ACID, ORM consciente y backoffice RBAC. | **Disponible** ([`practice/s2/`](practice/s2/)) |
 | **S3** | **Entregar software** | Producto full-stack desplegado, contenedorización (Docker) y pipelines de CI/CD. | *En Roadmap* |
 | **S4** | **Diseñar sistemas** | Arquitecturas distribuidas, asincronismo, colas y resiliencia de datos. | *En Roadmap* |
 | **S5** | **Producción** | Operabilidad real, métricas, observabilidad, debugging distribuido y post-mortems. | *En Roadmap* |
@@ -45,7 +45,13 @@ El currículo se divide en seis semestres (aproximadamente 22 semanas académica
 
 El mapa normativo completo de las 79 competencias evaluadas está detallado en [`curriculum/competencies.md`](curriculum/competencies.md) y el cronograma en [`curriculum/study-plan.md`](curriculum/study-plan.md).
 
-> **Ritmo y dedicación:** La estimación de 3 años responde a una dedicación *part-time* estándar (~10–12 h/semana). Al ser un currículo guiado por competencias observables y no por tiempo de cursada fija, personas con mayor dedicación semanal o experiencia previa pueden avanzar a su propio ritmo y completarlo en **1 a 2 años** a medida que acrediten y defiendan los hitos (*milestones*). Más detalles en [`docs/faq.md`](docs/faq.md).
+> **Competencias antes que reloj (Métrica de volumen, no plazo rígido):**  
+> La denominación de *tres años* y *seis semestres* establece una **escala de profundidad técnica**, no una fecha límite de vencimiento en el calendario. En este programa el estándar de competencia es fijo e innegociable, pero el tiempo es la variable libre:  
+> - **Part-time estándar (trabaja o cursa grado en paralelo, ~10–12 h/semana):** ~3 años (avance sostenido de ~22 semanas de referencia por semestre).  
+> - **Part-time intensivo (estudiante avanzado de informática o dev junior, ~18–22 h/semana):** ~1.5 a 2 años (acreditación acelerada de hitos).  
+> - **Dedicación exclusiva / Full-time (~35–40 h/semana):** ~10 a 14 meses.  
+>  
+> En cuanto cumplís los requisitos, verificás tu código y defendés el milestone de la etapa, avanzás inmediatamente al siguiente semestre sin esperar a nadie. Más detalles en [`docs/faq.md`](docs/faq.md).
 
 ---
 
@@ -77,7 +83,7 @@ Podés construir el **Reference Project** incluido en el repositorio (un sistema
 ## Navegación del repositorio
 
 - [`curriculum/`](curriculum/): Plan de estudio maestro, catálogo de competencias y criterios de evaluación.
-- [`practice/`](practice/): Clases prácticas detalladas, laboratorios y desafíos (comenzando por [`practice/s1/`](practice/s1/)).
+- [`practice/`](practice/): Clases prácticas detalladas, laboratorios y desafíos ([`practice/s1/`](practice/s1/) y [`practice/s2/`](practice/s2/)).
 - [`project/`](project/): Especificaciones de requerimientos y modelo del proyecto longitudinal.
 - [`tutoring/`](tutoring/): Protocolos de consulta asincrónica, rubber-ducking y plantillas de intake técnico.
 - [`docs/`](docs/): Guías de inicio rápido ([`getting-started.md`](docs/getting-started.md)), preguntas frecuentes ([`faq.md`](docs/faq.md)) y estado del proyecto ([`roadmap.md`](docs/roadmap.md)).

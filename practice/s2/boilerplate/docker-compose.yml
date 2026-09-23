@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: extracurricular-db-s2
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER:-consultorio}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-consultorio_pass}
+      POSTGRES_DB: ${DB_NAME:-consultorio_db}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-consultorio} -d ${DB_NAME:-consultorio_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
